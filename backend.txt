@@ -1,0 +1,76 @@
+backend/
+├── src/
+│   ├── server.js                   # Server entry point
+│   ├── app.js                      # Express app configuration
+│   ├── config/                     # Configuration files
+│   │   ├── database.js            # DB connections
+│   │   ├── blockchain.js          # Blockchain node config
+│   │   ├── aws.js                 # AWS/S3 config
+│   │   └── constants.js           # Server constants
+│   ├── middleware/                 # Express middleware
+│   │   ├── auth.js                # JWT authentication
+│   │   ├── validation.js          # Request validation
+│   │   ├── rateLimit.js           # Rate limiting
+│   │   ├── errorHandler.js        # Error handling
+│   │   └── logging.js             # Request logging
+│   ├── routes/                     # API routes
+│   │   ├── index.js               # Route aggregator
+│   │   ├── auth.routes.js         # Authentication endpoints
+│   │   ├── user.routes.js         # User management
+│   │   ├── project.routes.js      # Project CRUD operations
+│   │   ├── investment.routes.js   # Investment transactions
+│   │   ├── verification.routes.js # Sustainability verification
+│   │   ├── rewards.routes.js      # Vibe Coin rewards
+│   │   ├── admin.routes.js        # Admin endpoints
+│   │   └── webhook.routes.js      # External service webhooks
+│   ├── controllers/                # Route controllers
+│   │   ├── auth.controller.js
+│   │   ├── user.controller.js
+│   │   ├── project.controller.js
+│   │   ├── investment.controller.js
+│   │   ├── verification.controller.js
+│   │   └── rewards.controller.js
+│   ├── services/                   # Business logic
+│   │   ├── auth.service.js        # Authentication logic
+│   │   ├── user.service.js        # User management
+│   │   ├── project.service.js     # Project operations
+│   │   ├── investment.service.js  # Investment processing
+│   │   ├── verification.service.js # AI verification logic
+│   │   ├── rewards.service.js     # Vibe Coin calculations
+│   │   ├── email.service.js       # Email notifications
+│   │   ├── blockchain.service.js  # Blockchain interactions
+│   │   ├── ai.service.js          # GreenGuardian AI integration
+│   │   └── analytics.service.js   # Data analytics
+│   ├── models/                     # Database models
+│   │   ├── User.js                # User schema
+│   │   ├── Company.js             # Company profiles
+│   │   ├── Project.js             # Green projects
+│   │   ├── Investment.js          # Investment records
+│   │   ├── Verification.js        # Verification records
+│   │   ├── Transaction.js         # Blockchain transactions
+│   │   ├── Reward.js              # Vibe Coin rewards
+│   │   └── Notification.js        # User notifications
+│   ├── utils/                      # Utility functions
+│   │   ├── validators.js          # Data validation
+│   │   ├── formatters.js          # Response formatting
+│   │   ├── blockchain.js          # Smart contract interactions
+│   │   ├── aiHelpers.js           # AI service helpers
+│   │   └── queue.js               # Background job queue
+│   ├── scripts/                    # Maintenance scripts
+│   │   ├── seedDatabase.js        # Database seeding
+│   │   ├── blockchainSync.js      # Blockchain data sync
+│   │   ├── aiTraining.js          # AI model training
+│   │   └── backup.js              # Data backup
+│   └── workers/                    # Background workers
+│       ├── verificationWorker.js   # AI verification processing
+│       ├── rewardsWorker.js        # Vibe Coin distribution
+│       ├── emailWorker.js         # Email queue processing
+│       └── blockchainWorker.js    # Blockchain event listener
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+├── .env.example
+├── Dockerfile
+├── docker-compose.yml
+└── package.json
