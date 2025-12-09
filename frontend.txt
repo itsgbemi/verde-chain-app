@@ -1,0 +1,83 @@
+frontend/
+├── public/
+│   ├── index.html                  # Main entry point
+│   ├── favicon.svg
+│   ├── manifest.json               # PWA manifest
+│   └── robots.txt
+├── src/
+│   ├── main.js                     # App entry point
+│   ├── App.vue                     # Main Vue component (or React/other)
+│   ├── router/                     # Routing configuration
+│   │   ├── index.js
+│   │   └── routes.js
+│   ├── store/                      # State management (Vuex/Redux)
+│   │   ├── index.js
+│   │   ├── modules/
+│   │   │   ├── auth.js            # Authentication state
+│   │   │   ├── wallet.js          # Web3 wallet state
+│   │   │   ├── projects.js        # Projects data
+│   │   │   └── rewards.js         # Vibe Coins state
+│   ├── api/                        # API clients
+│   │   ├── index.js               # API instance setup
+│   │   ├── auth.js                # Authentication API
+│   │   ├── projects.js            # Projects API
+│   │   ├── verification.js        # Verification API
+│   │   └── blockchain.js          # Blockchain interactions
+│   ├── components/                 # Reusable UI components
+│   │   ├── common/
+│   │   │   ├── Button.vue
+│   │   │   ├── Card.vue
+│   │   │   ├── Modal.vue
+│   │   │   └── Loader.vue
+│   │   ├── layout/
+│   │   │   ├── Header.vue
+│   │   │   ├── Footer.vue
+│   │   │   ├── Sidebar.vue
+│   │   │   └── Navigation.vue
+│   │   ├── wallet/
+│   │   │   ├── WalletConnect.vue
+│   │   │   ├── TokenBalance.vue
+│   │   │   └── TransactionHistory.vue
+│   │   └── sustainability/
+│   │       ├── EcoScoreCard.vue
+│   │       ├── ImpactTracker.vue
+│   │       └── VerificationBadge.vue
+│   ├── views/                      # Page components
+│   │   ├── Home.vue                # Landing/dashboard
+│   │   ├── Discover.vue            # Project marketplace
+│   │   ├── ProjectDetail.vue       # Single project view
+│   │   ├── Invest.vue              # Investment flow
+│   │   ├── Portfolio.vue           # User portfolio
+│   │   ├── Rewards.vue             # Vibe Coins & rewards
+│   │   ├── Verification.vue        # Company verification portal
+│   │   ├── Admin.vue               # Admin dashboard
+│   │   └── Settings.vue
+│   ├── composables/                # Vue composables (React hooks)
+│   │   ├── useWeb3.js
+│   │   ├── useProjects.js
+│   │   ├── useVerification.js
+│   │   └── useBlockchain.js
+│   ├── utils/                      # Utility functions
+│   │   ├── formatters.js           # Number/date formatting
+│   │   ├── validators.js           # Form validation
+│   │   ├── blockchain.js           # Web3 utilities
+│   │   └── constants.js            # App constants
+│   ├── styles/                     # Global styles
+│   │   ├── main.scss
+│   │   ├── variables.scss          # Design tokens
+│   │   ├── mixins.scss
+│   │   └── components/
+│   ├── assets/
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── fonts/
+│   └── locales/                    # i18n translations
+│       ├── en.json
+│       └── es.json
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+├── .env.local                      # Local environment
+├── vite.config.js                  # Build tool config (Vite)
+└── package.json                    # Frontend dependencies
