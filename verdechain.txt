@@ -1,0 +1,9 @@
+verdechain/
+├── vibe-coding/                    # AI development docs
+├── frontend/                      # Web application
+├── backend/                       # API server
+├── blockchain/                    # Smart contracts
+├── ai-services/                   # GreenGuardian AI
+├── infrastructure/                # DevOps
+├── docs/                          # Documentation
+└── database/                      # DB schemas & migrations
