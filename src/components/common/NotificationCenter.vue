@@ -3,7 +3,7 @@
 <div v-for="notification in notifications":key="notification.id"
 :class="['notification',notification.type]">
 <div class="notification-content">
-<i:class="iconMap[notification.type]"></i>
+<i :class="iconMap[notification.type]"></i>
 <span>{{notification.message}}</span>
 </div>
 <button @click="removeNotification(notification.id)"class="notification-close">
