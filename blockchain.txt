@@ -1,0 +1,18 @@
+blockchain/
+├── contracts/                      # Solidity smart contracts
+│   ├── VibeCoin.sol               # ERC-20 token contract
+│   ├── ProjectToken.sol           # Project investment NFTs
+│   ├── VerificationRegistry.sol   # EcoScore storage
+│   ├── RewardsDistributor.sol     # Vibe Coin distribution
+│   ├── InvestmentPool.sol         # Investment escrow
+│   └── Governance.sol             # DAO governance
+├── scripts/                        # Deployment scripts
+│   ├── deploy.js
+│   ├── verify.js
+│   └── upgrade.js
+├── test/                           # Contract tests
+│   ├── VibeCoin.test.js
+│   └── ProjectToken.test.js
+├── hardhat.config.js              # Hardhat configuration
+├── package.json
+└── README.md
