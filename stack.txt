@@ -1,23 +1,89 @@
+## FINAL TECH STACK FOR VERDECHAIN
+
 Frontend:
-  - Framework: Vue.js 3 (or React - undecided)
-  - Styling: SCSS with CSS variables
-  - State: Vuex/Redux
-  - Build: Vite
+  Framework: Vue.js 3
+  Build Tool: Vite
+  State Management: Pinia (Vuex 5)
+  Styling: SCSS with CSS Variables + UnoCSS (utility-first)
+  UI Library: Element Plus (component library)
+  Charts: ECharts (data visualization)
+  Form Validation: Vee-Validate
+  Routing: Vue Router 4
+  TypeScript: Yes (strict mode)
+  PWA: Vite PWA Plugin
 
 Backend:
-  - Runtime: Node.js 18+ with Express
-  - Database: PostgreSQL with Prisma ORM
-  - Authentication: JWT + OAuth
-  - Queue: Bull (Redis)
-  - AI: Python microservice (FastAPI)
+  Runtime: Node.js 20 LTS with Express.js
+  Database: PostgreSQL 15
+  ORM: Prisma
+  Authentication: JWT + OAuth2 (Google, GitHub)
+  File Storage: AWS S3 / MinIO (self-hosted option)
+  Email: Resend / SendGrid
+  Queue: Bull (Redis)
+  Caching: Redis
+  Real-time: Socket.io
+  Validation: Zod
+  API Documentation: Swagger/OpenAPI
+  Testing: Jest + Supertest
+  Container: Docker
 
 Blockchain:
-  - Network: Polygon/Ethereum
-  - Contracts: Solidity
-  - Development: Hardhat
-  - Tokens: ERC-20 (Vibe Coin), ERC-721 (Project NFTs)
+  Network: Polygon PoS (Primary) + Arbitrum Nova (Secondary)
+  Smart Contracts: Solidity 0.8.x
+  Development: Hardhat
+  Testing: Hardhat + Waffle + Chai
+  Security: Slither + MythX
+  Token Standards:
+    - ERC-20: Vibe Coin (VIBE)
+    - ERC-721: Project NFTs
+    - ERC-1155: Verification Badges
+  Wallet Integration: Web3Modal (MetaMask, WalletConnect, Coinbase Wallet)
+  Oracles: Chainlink (for external sustainability data)
+  Indexing: The Graph Protocol
 
-AI/ML:
-  - Framework: PyTorch/TensorFlow
-  - Data: Satellite imagery, IoT sensors, company reports
-  - Models: EcoScore prediction, greenwashing detection
+AI/ML Services:
+  Framework: Python 3.11 + FastAPI
+  ML Framework: PyTorch 2.0 + Hugging Face Transformers
+  Computer Vision: OpenCV + YOLO
+  Satellite Data: Google Earth Engine API
+  NLP: spaCy + NLTK (for report analysis)
+  Vector Database: Pinecone / Qdrant (for similarity search)
+  Model Serving: TorchServe
+  Monitoring: MLflow + Weights & Biases
+  Container: Docker + Kubernetes
+
+Infrastructure:
+  Hosting:
+    - Frontend: Vercel (automatic preview deployments)
+    - Backend: Railway / Render (easy scaling)
+    - AI Services: Google Cloud Run (carbon neutral regions)
+    - Database: Supabase / AWS RDS
+    - Blockchain Nodes: QuickNode + self-hosted
+    
+  CI/CD: GitHub Actions
+  Monitoring: Sentry + Datadog
+  Logging: Logtail / Papertrail
+  Analytics: PostHog / Mixpanel
+  CDN: Cloudflare (green energy powered)
+  
+  Container Orchestration: Docker Compose (dev) + Kubernetes (prod)
+  Infrastructure as Code: Terraform
+  Secrets Management: Doppler / HashiCorp Vault
+
+Development Tools:
+  Package Manager: pnpm (faster, disk-efficient)
+  Code Quality: ESLint + Prettier + Husky
+  Git Hooks: lint-staged
+  Commit Convention: Conventional Commits
+  Documentation: Vitepress
+  API Client: Insomnia / Hoppscotch
+  Database GUI: TablePlus / Prisma Studio
+
+Third-Party Services:
+  Payment Processing: Stripe (fiat) + Uniswap (crypto)
+  KYC/AML: SumSub / Persona
+  Email Marketing: ConvertKit
+  Analytics: Google Analytics 4 + Plausible (privacy-focused)
+  Customer Support: Crisp / Intercom
+  Error Tracking: Sentry
+  Uptime Monitoring: UptimeRobot
