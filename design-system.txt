@@ -1,0 +1,11 @@
+/* Color Palette */
+--verde-green: #00B894;    /* Primary brand color */
+--ai-teal: #00CEC9;        /* Technology/AI elements */
+--solar-orange: #FF9F43;   /* Accents, warnings, rewards */
+--forest-charcoal: #2D3436;/* Text, headers */
+--arctic-white: #FFFFFF;   /* Backgrounds */
+--mist-gray: #F5F6FA;      /* Cards, sections */
+
+/* Typography */
+Primary: 'Inter', sans-serif;
+Secondary: 'Manrope', sans-serif;
