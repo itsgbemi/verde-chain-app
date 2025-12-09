@@ -1,0 +1,23 @@
+Frontend:
+  - Framework: Vue.js 3 (or React - undecided)
+  - Styling: SCSS with CSS variables
+  - State: Vuex/Redux
+  - Build: Vite
+
+Backend:
+  - Runtime: Node.js 18+ with Express
+  - Database: PostgreSQL with Prisma ORM
+  - Authentication: JWT + OAuth
+  - Queue: Bull (Redis)
+  - AI: Python microservice (FastAPI)
+
+Blockchain:
+  - Network: Polygon/Ethereum
+  - Contracts: Solidity
+  - Development: Hardhat
+  - Tokens: ERC-20 (Vibe Coin), ERC-721 (Project NFTs)
+
+AI/ML:
+  - Framework: PyTorch/TensorFlow
+  - Data: Satellite imagery, IoT sensors, company reports
+  - Models: EcoScore prediction, greenwashing detection
