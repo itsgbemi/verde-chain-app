@@ -1,0 +1,31 @@
+ai-services/
+├── green-guardian-ai/             # Main AI verification service
+│   ├── src/
+│   │   ├── data_processing/       # Data preprocessing
+│   │   │   ├── satellite.py       # Satellite imagery analysis
+│   │   │   ├── supply_chain.py    # Supply chain data
+│   │   │   └── emissions.py       # Emissions data processing
+│   │   ├── models/                # ML models
+│   │   │   ├── eco_score.py       # EcoScore prediction
+│   │   │   ├── greenwashing.py    # Greenwashing detection
+│   │   │   └── impact_prediction.py
+│   │   ├── api/                   # AI service API
+│   │   │   ├── app.py
+│   │   │   └── endpoints.py
+│   │   └── utils/                 # AI utilities
+│   │       ├── data_fetchers.py   # External data sources
+│   │       └── validators.py      # Model validation
+│   ├── notebooks/                 # Jupyter notebooks
+│   │   ├── model_training.ipynb
+│   │   └── data_exploration.ipynb
+│   ├── requirements.txt
+│   └── Dockerfile
+└── data-pipeline/                 # Data collection pipeline
+    ├── sources/                   # Data sources
+    │   ├── satellite_feeds/
+    │   ├── company_reports/
+    │   ├── iot_sensors/
+    │   └── external_apis/
+    ├── processors/                # Data processors
+    ├── storage/                   # Data storage
+    └── monitoring/                # Pipeline monitoring
