@@ -1,0 +1,14 @@
+verdechain/
+├── .cursorrules                    # AI development rules
+├── .gitignore
+├── LICENSE
+├── README.md                       # Main project documentation
+├── package.json                    # Root package (monorepo setup)
+├── docker-compose.yml              # Container orchestration
+├── dockerfile                      # Production Docker setup
+├── .env.example                    # Environment variables template
+└── vibe-coding/                    # AI development documentation
+    ├── prompts.md
+    ├── tools-used.md
+    ├── iterations/
+    └── decisions/
